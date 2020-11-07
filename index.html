@@ -14,19 +14,24 @@
             <h1 class="display-6"><i class="far fa-newspaper"></i> New York Times Search</h1>
     </div>
 
-    <div class="card" style="max-width: 18rem;">
+    <div class="card container col-12" style="max-width: 18rem;">
         <div class="card-header">Search Parameters</div>
         <div class="card-body">
             <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <div class="form-group row ">
+                  <label for="searchTerm">Search Term:</label>
+                  <input type="text" class="form-control" id="searchTerm">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
+                    <label for="articleCount">Number of Records to Retrieve:</label>
+                    <select class="form-control" id="articleCount">
+                      <option>1</option>
+                      <option>3</option>
+                      <option>5</option>
+                      <option>10</option>
+                      <option>20</option>
+                    </select>
+                  </div>
                 <div class="form-group form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">Check me out</label>
