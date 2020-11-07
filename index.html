@@ -19,12 +19,12 @@
         <div class="card-body">
             <form>
                 <div class="form-group row ">
-                  <label for="searchTerm">Search Term:</label>
-                  <input type="text" class="form-control" id="searchTerm">
+                  <label for="searchTerm" class="col-2">Search Term:</label>
+                  <input type="text" class="form-control col-10" id="searchTerm">
                 </div>
-                <div class="form-group">
-                    <label for="articleCount">Number of Records to Retrieve:</label>
-                    <select class="form-control" id="articleCount">
+                <div class="form-group row">
+                    <label for="articleCount" class="col-4">Number of Records to Retrieve:</label>
+                    <select class="form-control col-8" id="articleCount">
                       <option>1</option>
                       <option>3</option>
                       <option>5</option>
@@ -33,12 +33,12 @@
                     </select>
                   </div>
                 <div class="form-group row ">
-                    <label for="searchTerm">Start Year (Optional):</label>
-                    <input type="text" class="form-control" id="searchTerm">
+                    <label for="startYear">Start Year (Optional):</label>
+                    <input type="date" class="form-control" id="startYear">
                   </div>
                   <div class="form-group row ">
-                    <label for="searchTerm">Last Year (Optional):</label>
-                    <input type="text" class="form-control" id="searchTerm">
+                    <label for="lastYear">Last Year (Optional):</label>
+                    <input type="date" class="form-control" id="lastYear">
                   </div>
                 <button type="click" class="btn btn-light" id="searchBtn"><i class="fas fa-search"></i> Search</button>
                 <button type="click" class="btn btn-light" id="clearBtn"><i class="far fa-trash-alt"></i> Clear Result</button>
